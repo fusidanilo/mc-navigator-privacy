@@ -1,34 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#8B5CF6"/>
-      <stop offset="0.5" stop-color="#3B5BFD"/>
-      <stop offset="1" stop-color="#06C3E0"/>
-    </linearGradient>
-    <radialGradient id="shine" cx="0.25" cy="0.12" r="0.9">
-      <stop offset="0" stop-color="#fff" stop-opacity=".45"/>
-      <stop offset=".55" stop-color="#fff" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#fff" stop-opacity=".55"/>
-      <stop offset="1" stop-color="#fff" stop-opacity=".05"/>
-    </linearGradient>
-    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#14105a" flood-opacity=".35"/>
-    </filter>
-  </defs>
-  <rect x="6" y="6" width="116" height="116" rx="32" fill="url(#bg)"/>
-  <rect x="6" y="6" width="116" height="116" rx="32" fill="url(#shine)"/>
-  <rect x="7" y="7" width="114" height="114" rx="31" fill="none" stroke="url(#edge)" stroke-width="2"/>
-  <g filter="url(#sh)">
-    <g fill="none" stroke="#fff" stroke-width="7.5" stroke-linecap="round">
-      <path d="M40 64 C62 64 60 41 84 41"/>
-      <path d="M40 64 C62 64 60 87 84 87"/>
-    </g>
-    <circle cx="38" cy="64" r="14" fill="#fff"/>
-    <circle cx="38" cy="64" r="6" fill="#4F46E5"/>
-    <rect x="78" y="30" width="24" height="22" rx="6.5" fill="#fff"/>
-    <rect x="78" y="76" width="24" height="22" rx="6.5" fill="#E3E9FF"/>
-    <path d="M84 41h12M84 87h12" stroke="#4F46E5" stroke-opacity=".55" stroke-width="3" stroke-linecap="round"/>
+  <defs><clipPath id="c"><rect x="4" y="4" width="120" height="120" rx="16"/></clipPath></defs>
+  <g clip-path="url(#c)">
+    <rect x="4" y="4" width="120" height="120" fill="#191d27"/>
+    <path d="M4 34H124M4 64H124M4 94H124M34 4V124M64 4V124M94 4V124" stroke="#f2eee4" stroke-opacity=".07" stroke-width="1.5"/>
+    <rect x="4" y="113" width="120" height="11" fill="#e4572e"/>
   </g>
+  <g fill="none" stroke="#f2eee4" stroke-width="7" stroke-linejoin="round">
+    <path d="M46 59H62V35H78"/>
+    <path d="M62 59V83H78"/>
+  </g>
+  <circle cx="36" cy="59" r="12" fill="#e4572e"/>
+  <circle cx="36" cy="59" r="4.5" fill="#191d27"/>
+  <rect x="78" y="25" width="28" height="20" rx="2" fill="#f2eee4"/>
+  <rect x="78" y="73" width="28" height="20" rx="2" fill="#f2eee4"/>
+  <path d="M84 35H100M84 83H100" stroke="#191d27" stroke-width="3" stroke-linecap="round" stroke-opacity=".5"/>
 </svg>
