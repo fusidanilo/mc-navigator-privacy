@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MC Navigator – Privacy Policy</title>
+<meta name="description" content="Privacy policy of the MC Navigator Chrome extension for Salesforce Marketing Cloud Engagement.">
+<style>
+:root { --bg:#f6f7fb; --card:#fff; --text:#1b2232; --muted:#5d6b80; --border:#e3e7ee; --accent:#3b5bfd; color-scheme: light; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f141b; --card:#161d27; --text:#e6ebf2; --muted:#9aa7b8; --border:#273241; --accent:#7f97ff; color-scheme: dark; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 -apple-system, "Segoe UI", Roboto, sans-serif; }
+header { max-width:780px; margin:0 auto; padding:40px 20px 0; display:flex; align-items:center; gap:14px; }
+header img { width:48px; height:48px; }
+header .t { font-weight:700; font-size:20px; }
+nav { margin-left:auto; display:flex; gap:8px; }
+nav a { color:var(--accent); text-decoration:none; border:1px solid var(--border); border-radius:999px; padding:4px 12px; font-size:14px; background:var(--card); }
+main { max-width:780px; margin:24px auto 60px; padding:0 20px; }
+section { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:28px 32px; margin-bottom:24px; }
+h1 { font-size:28px; line-height:1.2; margin:0 0 6px; }
+h2 { font-size:19px; margin:28px 0 8px; }
+p, li { color:var(--text); }
+em { color:var(--muted); font-style:normal; }
+ul { padding-left:22px; }
+li { margin:6px 0; }
+code { font:13px ui-monospace, Menlo, monospace; background:color-mix(in srgb, var(--accent) 10%, transparent); padding:1px 5px; border-radius:5px; }
+a { color:var(--accent); }
+footer { text-align:center; color:var(--muted); font-size:13px; padding-bottom:40px; }
+@media (max-width:560px) { section { padding:20px; } header { flex-wrap:wrap; } nav { margin-left:0; } }
+</style>
+</head>
+<body>
+<header>
+  <img src="icon.svg" alt="">
+  <span class="t">MC Navigator</span>
+  <nav><a href="#en">English</a><a href="#it">Italiano</a></nav>
+</header>
+<main>
+<section id="en" lang="en">
+<h1>MC Navigator — Privacy Policy</h1>
+<p><em>Last updated: 10 October 2026</em></p>
+<p>MC Navigator is a Chrome extension that helps users of Salesforce Marketing Cloud Engagement explore the metadata of their business unit (Data Extensions, automations, queries, scripts, journeys, file imports) and its data lineage.</p>
+<h2>What data the extension handles</h2>
+<ul>
+<li><strong>Marketing Cloud metadata</strong>: names, keys and folders of Data Extensions, automations, queries, scripts, journeys, imports and file activities; SQL and script code; Data Extension fields. When the user explicitly asks for it, a preview of up to 50 rows of one Data Extension is shown and not stored.</li>
+<li><strong>Connection settings</strong>: in "Installed Package" mode, the Client ID, Client Secret, subdomain and MID entered by the user. In "Marketing Cloud session" mode no credentials are entered or stored: the extension uses the session already open in the user's browser.</li>
+<li><strong>Preferences</strong>: interface language, last selected tab and connection.</li>
+</ul>
+<h2>Where the data goes</h2>
+<ul>
+<li>All data is stored <strong>only in the user's browser</strong> (<code>chrome.storage.local</code> and <code>localStorage</code>).</li>
+<li>Data is exchanged <strong>only with the user's own Salesforce Marketing Cloud instance</strong> (<code>*.exacttarget.com</code> and <code>*.marketingcloudapis.com</code>), using read-only GET requests and, in "Installed Package" mode, the OAuth token request.</li>
+<li>There is <strong>no MC Navigator server</strong>. The extension does not send data to the developer or to third parties, and it contains no analytics, advertising or tracking.</li>
+<li>The extension never creates, modifies or deletes anything in Marketing Cloud.</li>
+<li>Excel exports are generated locally and saved only where the user chooses.</li>
+</ul>
+<h2>Data retention and deletion</h2>
+<p>Data remains in the browser until the user deletes it. From Settings the user can clear the local index or remove a connection, together with its credentials and index. Uninstalling the extension deletes all of its data.</p>
+<h2>Security</h2>
+<p>In "Installed Package" mode the Client Secret is stored unencrypted in the browser's extension storage. We recommend using a dedicated Installed Package with read-only permissions, or the "Marketing Cloud session" mode, which stores no credentials.</p>
+<h2>Changes and contact</h2>
+<p>Changes to this policy will be published on this page. For questions write to: <strong><a href="mailto:fusi.danilo@gmail.com">fusi.danilo@gmail.com</a></strong>.</p>
+<p>MC Navigator is an independent tool and is not affiliated with, endorsed or sponsored by Salesforce, Inc. Salesforce and Marketing Cloud are trademarks of Salesforce, Inc.</p>
+</section>
+<section id="it" lang="it">
+<h1>Informativa sulla privacy</h1>
+<p><em>Ultimo aggiornamento: 10 ottobre 2026</em></p>
+<p>MC Navigator è un'estensione di Chrome che aiuta chi usa Salesforce Marketing Cloud Engagement a esplorare i metadati della propria business unit (Data Extension, automation, query, script, journey, file import) e la lineage dei dati.</p>
+<h2>Quali dati tratta l'estensione</h2>
+<ul>
+<li><strong>Metadati di Marketing Cloud</strong>: nomi, key e cartelle di Data Extension, automation, query, script, journey, import e attività sui file; codice SQL e degli script; campi delle Data Extension. Su richiesta esplicita dell'utente viene mostrata un'anteprima di massimo 50 righe di una Data Extension, che non viene salvata.</li>
+<li><strong>Impostazioni di connessione</strong>: in modalità "Installed Package", Client ID, Client Secret, subdomain e MID inseriti dall'utente. In modalità "sessione di Marketing Cloud" non viene inserita né salvata alcuna credenziale: l'estensione usa la sessione già aperta nel browser.</li>
+<li><strong>Preferenze</strong>: lingua dell'interfaccia, ultima scheda e connessione selezionate.</li>
+</ul>
+<h2>Dove vanno i dati</h2>
+<ul>
+<li>Tutti i dati sono salvati <strong>solo nel browser dell'utente</strong> (<code>chrome.storage.local</code> e <code>localStorage</code>).</li>
+<li>I dati vengono scambiati <strong>solo con l'istanza Salesforce Marketing Cloud dell'utente</strong> (<code>*.exacttarget.com</code> e <code>*.marketingcloudapis.com</code>), con richieste GET in sola lettura e, in modalità "Installed Package", con la richiesta del token OAuth.</li>
+<li><strong>Non esiste un server di MC Navigator</strong>. L'estensione non invia dati allo sviluppatore né a terzi e non contiene analytics, pubblicità o tracciamento.</li>
+<li>L'estensione non crea, modifica né elimina nulla in Marketing Cloud.</li>
+<li>Gli export Excel vengono generati in locale e salvati solo dove sceglie l'utente.</li>
+</ul>
+<h2>Conservazione e cancellazione</h2>
+<p>I dati restano nel browser finché l'utente non li elimina. Dalle Impostazioni si può svuotare l'indice locale o rimuovere una connessione, insieme alle sue credenziali e al suo indice. Disinstallando l'estensione vengono eliminati tutti i suoi dati.</p>
+<h2>Sicurezza</h2>
+<p>In modalità "Installed Package" il Client Secret è salvato non cifrato nello storage dell'estensione. Si consiglia di usare un Installed Package dedicato con permessi di sola lettura, oppure la modalità "sessione di Marketing Cloud", che non salva credenziali.</p>
+<h2>Modifiche e contatti</h2>
+<p>Le modifiche a questa informativa saranno pubblicate in questa pagina. Per domande scrivi a: <strong><a href="mailto:fusi.danilo@gmail.com">fusi.danilo@gmail.com</a></strong>.</p>
+<p>MC Navigator è uno strumento indipendente, non affiliato, approvato o sponsorizzato da Salesforce, Inc. Salesforce e Marketing Cloud sono marchi di Salesforce, Inc.</p>
+</section>
+</main>
+<footer>MC Navigator · Chrome extension</footer>
+</body>
+</html>
